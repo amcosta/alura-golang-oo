@@ -1,0 +1,8 @@
+name: sync-templates-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: curl -I https://google.com
